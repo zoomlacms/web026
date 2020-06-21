@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>319</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="h_bottom_nav"&gt;
+&lt;ul class="container d-flex justify-content-around  center_list"&gt;
+	&lt;li class="bd-highlight "&gt;&lt;a href="{ZL:GetNodeLinkUrl(2)/}"&gt;&lt;i class="fa fa-home" aria-hidden="true"&gt;&lt;/i&gt;&lt;span&gt;首页&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="bd-highlight"&gt;&lt;a href="{ZL:GetNodeLinkUrl(10)/}"&gt;&lt;i class="fa fa-flickr" aria-hidden="true"&gt;&lt;/i&gt;&lt;span&gt;活动&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="bd-highlight"&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}" &gt;&lt;i class="fa fa-align-justify" aria-hidden="true"&gt;&lt;/i&gt;&lt;span&gt;分类&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="bd-highlight"&gt;&lt;a href="{ZL:GetNodeLinkUrl(5)/}"&gt;&lt;i class="fa fa-calendar-minus-o" aria-hidden="true"&gt;&lt;/i&gt;&lt;span&gt;菜谱&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class="bd-highlight"&gt;&lt;a href="/user"&gt;&lt;i class="fa fa-user" aria-hidden="true"&gt;&lt;/i&gt;&lt;span&gt;我&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

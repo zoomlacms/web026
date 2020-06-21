@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>318</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;nav class="navbar navbar-expand-lg navbar-light bg-light inav"&gt;
+  &lt;a class="navbar-brand" href="/"&gt;&lt;img src="{$CssDir/}Images/logo.svg" alt="logo"&gt;&lt;/a&gt;
+  &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+    &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+
+  &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+    &lt;ul class="navbar-nav mr-auto"&gt;
+      &lt;li class="nav-item active"&gt;
+        &lt;a class="nav-link" href="/"&gt;首页 &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="{ZL:GetNodeLinkUrl(10)/}"&gt;活动&lt;/a&gt;
+      &lt;/li&gt;
+	  &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="{ZL:GetNodeLinkUrl(2)/}"&gt;分类&lt;/a&gt;
+      &lt;/li&gt;
+	  &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="{ZL:GetNodeLinkUrl(5)/}"&gt;菜谱&lt;/a&gt;
+      &lt;/li&gt;
+	  &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;我&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

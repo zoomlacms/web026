@@ -1,0 +1,13 @@
+
+/*# sourceMappingURL=V4user_patch.css.map */
+.td_xs{width:45px;}
+.td_s{width:80px;}
+.td_m{width:150px;}
+.text_x{max-width:80px;display:inline-block;}
+.text_md{max-width:200px;display:inline-block;}
+.text_100{max-width:100px;display:inline-block;}
+.text_300{max-width:200px;display:inline-block;}
+.text_300{max-width:300px;display:inline-block;}
+.text_715{max-width:715px;display:inline-block;}
+.img50{max-width:50px;max-height:50px;}
+.error{color:#ff0000;font-size:12px;}

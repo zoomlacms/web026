@@ -1,0 +1,52 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot4()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+{ZL:GetCSS(2,0)/}
+</head>
+<body >
+<div class="announ_top">
+<h1>活动公告</h1>
+</div>
+<div class="container announ_list">
+<ul>
+	{ZL.Label id="活动资讯缩略图列表_带标题" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" TitleNum="30" ShowNum="10" /}
+</ul>
+</div>
+<!--活动公告 end-->
+
+<div class="bottom_nav_h"></div><!-- 底部间隙 -->
+<div class="h_bottom_nav">
+<ul class="container d-flex justify-content-around">
+	<li class="bd-highlight"><a href="{ZL:GetNodeLinkUrl(2)/}"><i class="fa fa-home" aria-hidden="true"></i><span>首页</span></a></li>
+	<li class="bd-highlight"><a href="{ZL:GetNodeLinkUrl(10)/}" class="active"><i class="fa fa-flickr" aria-hidden="true"></i><span>活动</span></a></li>
+	<li class="bd-highlight"><a href="/cart/cartbyclass.aspx"><i class="fa z01-icon092" aria-hidden="true"></i><span>买菜</span></a></li>
+	<li class="bd-highlight"><a href="{ZL:GetNodeLinkUrl(19)/}"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i><span>菜谱</span></a></li>
+	<li class="bd-highlight"><a href="/wxpromo.aspx?r=/User"><i class="fa fa-user" aria-hidden="true"></i><span>我</span></a></li>
+</ul>
+</div>
+<!--底部导航 end-->
+<section>
+  <div class="mask_menu" style="display:none;"></div>
+  <div class="menu" id="menufloat"><i class="fa fa-th-large icon-menu"></i></div>
+  <div class="menu-c" id="menufloat-c" style="display:none;">
+    <div class="menu-c-out">
+      <div class="menu-c-inner"> <a class="a-home" href="{ZL:GetNodeLinkUrl(2)/}" title="首页"></a> 
+	  <a class="a-tel" href="tel:{ZL.Label id="客服电话"/}" title="联系店主"></a>
+	  <a id="serviceUrl" class="a-server" href="{ZL.Label id="QQ客服群链接"/}" title="客服群"></a>
+	  <a class="a-member" href="/wxpromo.aspx?r=/User" title="会员中心"></a>
+	  <a class="a-search" href="/cart/cartbyclass.aspx" title="分类"></a>
+	  <a class="a-cart" href="/Cart/Cart.aspx?ProClass=1" title="购物车"></a> 
+	  <a class="a-collect" href="{ZL:GetNodeLinkUrl(10)/}" id="collect-link" title="活动"></a> </div>
+	  <!--收藏可以改为留言，指向gesut-->
+    </div>
+  </div>
+</section>
+<script src="/dist/js/foru.js"></script>
+</body>
+</html>   

@@ -1,0 +1,184 @@
+﻿ {ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot4()/}
+<link href="{$CssDir/}global.css" rel="stylesheet"/>
+{ZL:GetCSS(2,0)/}
+<link rel="stylesheet" href="/dist/css/swiper.min.css">
+<script src="/dist/js/swiper.min.js" ></script>
+</head>
+<body>
+
+<header>
+<div class="user_mimenu user_home_mimenu hidden-xs">
+<div class="navbar navbar-fixed-top" role="navigation">
+
+<a  class="btn btn-default" id="mimenu_btn">
+<i class="fa fa-bars" aria-hidden="true"></i>
+</a>
+<div class="user_mimenu_left">
+<ul class="list-unstyled">
+<li><a href="/" target="_blank">首页</a></li> 
+<li><a href="/Index" target="_blank">社区</a></li>
+<li><a href="/Ask" target="_blank">问答</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+
+<!--导航 end-->
+
+<div class="cl_search">
+<div class="container nr_top">
+<form class="form-inline" role="search" action="/Search/SearchList" method="get" target="_blank">
+<input name="S" type="hidden" value="1" />
+<div class="form-group">
+<input name="KeyWord" class="form-control mr-sm-3" type="text" placeholder="全站搜索">
+</div>
+<button class="btn my-sm-0" type="submit" style="background:none; margin-left:-3rem;" ><i class="fa fa-search" ></i></button>
+</form>
+</div>
+</div>
+<!--search end-->
+<div class="home_banner">
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><img src="{$CssDir/}Images/bj005.jpg" alt="" >
+<h1>不论刮风下雨，全年无休哦~</h1>
+</div>
+<div class="swiper-slide"><img src="{$CssDir/}Images/brand02.jpg" alt="" >
+<h1>买菜点击“商城”，足不出户，好菜到家。</h1>
+</div>
+<div class="swiper-slide"><img src="{$CssDir/}Images/brand03.jpg" alt="" >
+<h1>为了孩子种好菜，自产生鲜，绝无催化剂，健康无公害，高品质保证。</h1>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+<!--轮播图 end-->
+
+<div class="container home_menu">
+<ul>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon1.jpg" alt=""><span>蔬菜</span></a></li>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon2.jpg" alt=""><span>肉类</span></a></li>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon3.jpg" alt=""><span>熟食</span></a></li>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon4.jpg" alt=""><span>海鲜</span></a></li>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon5.jpg" alt=""><span>水果</span></a></li>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon6.jpg" alt=""><span>预制菜</span></a></li>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon7.jpg" alt=""><span>乳品</span></a></li>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon8.jpg" alt=""><span>花卉</span></a></li>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon9.jpg" alt=""><span>零食</span></a></li>
+<li><a href="{ZL:GetNodeListUrl(2)/}"><img src="{$CssDir/}Images/icon10.jpg" alt=""><span>月卡</span></a></li>
+</ul>
+</div>
+<!--菜单 end-->
+
+
+<div class="container home_qg">
+<div class="home_rm_h" ><h2><span>限时抢购</span> </h2> <a href="{ZL:GetNodeLinkUrl(6)/}">更多 >></a> </div> 
+<ul>
+<li><a href=""><img src="{$CssDir/}Images/Mango.jpg" alt=""></a></li>
+<li><a href=""><small>鲜美橙汁</small></a><a href=""><img src="{$CssDir/}Images/l02.jpg" alt=""></a></li>
+<li><a href=""><small>进口水果优惠享</small></a><a href=""><img src="{$CssDir/}Images/l01.jpg" alt=""></a></li>
+</ul>
+</div>
+<!--xianshi end-->
+
+
+<div class="container home_rm">
+<div class="home_rm_h" ><h2><span>热卖推荐</span> </h2> <a href="{ZL:GetNodeLinkUrl(7)/}">更多 >></a> </div> 
+<ul>
+{ZL.Label id="微信首页商品热卖分类列表_不分页" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" TitleNum="40" ShowNum="5" /}
+</ul>
+</div>
+<!--center end-->
+
+
+<div class="container home_brand">
+<a href=""><img src="{$CssDir/}Images/br.jpg" alt="活动"></a>
+</div>
+<div class="container home_zx">
+<div class="home_rm_h" ><h2><span>最新资讯</span> </h2> <a href="">更多 >></a> </div> 
+<ul>
+{ZL.Label id="移动主页缩略图列表_推荐资讯" NodeID="10" TitleNum="30" ShowNum="4" /}
+</ul>
+</div>
+<!--info end-->
+
+<footer class="container home_footer">
+<div class="home_foot">
+<ul>
+<li>官方授权</li>
+<li>品质保证</li>
+<li>信誉保障</li>
+<li>价格优惠</li>
+</ul>
+<a href=""><img src="{$CssDir/}Images/banner3.jpg" alt=""></a>
+<p>&copy; Copyright 2018 蔬香美园有限公司 <br/> <a href="http://www.miitbeian.gov.cn" target="_blank">赣ICP备1800005号-1</a> </p>
+</div>
+</footer>
+
+
+<div class="h_bottom_nav">
+<ul class="container d-flex justify-content-around">
+	<li class="bd-highlight"><a href="{ZL:GetNodeLinkUrl(2)/}" class="active"><i class="fa fa-home" aria-hidden="true"></i><span>首页</span></a></li>
+	<li class="bd-highlight"><a href="{ZL:GetNodeLinkUrl(10)/}"><i class="fa fa-flickr" aria-hidden="true"></i><span>活动</span></a></li>
+	<li class="bd-highlight"><a href="/Cart/CartByClass.aspx" ><i class="fa z01-icon092" aria-hidden="true"></i><span>买菜</span></a></li>
+	<li class="bd-highlight"><a href="{ZL:GetNodeLinkUrl(19)/}"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i><span>菜谱</span></a></li>
+	<li class="bd-highlight"><a href="/wxpromo.aspx?r=/User"><i class="fa fa-user" aria-hidden="true"></i><span>我</span></a></li>
+</ul>
+</div>
+<!--底部导航 end-->
+
+<section>
+  <div class="mask_menu" style="display:none;"></div>
+  <div class="menu" id="menufloat"><i class="fa fa-th-large icon-menu"></i></div>
+  <div class="menu-c" id="menufloat-c" style="display:none;">
+    <div class="menu-c-out">
+      <div class="menu-c-inner"> <a class="a-home" href="{ZL:GetNodeLinkUrl(2)/}" title="首页"></a> 
+	  <a class="a-tel" href="tel:{ZL.Label id="客服电话"/}" title="联系店主"></a>
+	  <a id="serviceUrl" class="a-server" href="{ZL.Label id="QQ客服群链接"/}" title="客服群"></a>
+	  <a class="a-member" href="/wxpromo.aspx?r=/User" title="会员中心"></a>
+	  <a class="a-search" href="/Cart/CartByClass.aspx" title="分类"></a>
+	  <a class="a-cart" href="/Cart/Cart.aspx?ProClass=1" title="购物车"></a> 
+	  <a class="a-collect" href="{ZL:GetNodeLinkUrl(10)/}" id="collect-link" title="活动"></a> </div>
+	  <!--收藏可以改为留言，指向gesut-->
+    </div>
+  </div>
+</section>
+
+<script src="/dist/js/foru.js"></script>
+<script>
+ $("#mimenu_btn").click(function (e) {
+            if ($(".user_mimenu_left").width() > 0) {
+                $(".user_mimenu_left ul").fadeOut(100);
+                $(".user_mimenu_left").animate({ width: 0 }, 200);
+            }
+            else {
+                $(".user_mimenu_left").animate({ width: 150 }, 300);
+                $(".user_mimenu_left ul").fadeIn();
+            }
+        });
+
+$(function(){
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+	el: '.swiper-pagination',
+	clickable: true,
+  },
+});
+})
+//轮播js end
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot4()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<link rel="stylesheet" href="/dist/css/swiper.min.css">
+<script src="/dist/js/swiper.min.js" ></script>
+
+</head>
+<body>
+<div class="cl_search">
+<div class="container nr_top">
+<form class="form-inline" role="search" action="/Search/SearchList" method="get" target="_blank">
+<input name="S" type="hidden" value="1" />
+<div class="form-group">
+<input name="KeyWord" class="form-control mr-sm-3" type="text" placeholder="全站搜索">
+</div>
+<button class="btn my-sm-0" type="submit" style="background:none; margin-left:-3rem;" ><i class="fa fa-search" ></i></button>
+</form>
+</div>
+</div>
+<div class="container home_banner cl_brand">
+<h1>每天都有不同的滋味</h1>
+</div>
+<!--banner end--> 
+
+<div class="container cl_main">
+<div class="bd-example">
+<div class="row">
+<div class="col-4">
+<div id="list-example" class="list-group">
+<a class="list-group-item list-group-item-action active" href="#list-item-6">蔬菜及豆制品</a>
+<a class="list-group-item list-group-item-action" href="#list-item-7">肉类</a>
+<a class="list-group-item list-group-item-action" href="#list-item-11">鱼类</a>
+<a class="list-group-item list-group-item-action" href="#list-item-12">蛋类</a> 
+<a class="list-group-item list-group-item-action" href="#list-item-13">净菜</a>
+<a class="list-group-item list-group-item-action" href="#list-item-14">活禽</a>
+<a class="list-group-item list-group-item-action" href="#list-item-15">手工</a> 
+<a class="list-group-item list-group-item-action" href="#list-item-17">饮料</a>
+<a class="list-group-item list-group-item-action" href="#list-item-18">干货</a>
+<a class="list-group-item list-group-item-action" href="#list-item-22">米面粮油</a> 
+</div>
+</div>
+<div class="col-8 cl_main_right">
+<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+<h4 id="list-item-6">蔬菜及豆制品</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="6" TitleNum="25" ShowNum="100" /}
+</ul>
+<h4 id="list-item-7">肉类</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="7" TitleNum="25" ShowNum="100" /}
+</ul>
+<h4 id="list-item-11">鱼类</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="11" TitleNum="25" ShowNum="100" /}
+</ul>
+<h4 id="list-item-12">蛋类</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="12" TitleNum="25" ShowNum="100" /}
+</ul>
+<h4 id="list-item-13">净菜</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="13" TitleNum="25" ShowNum="100" /}
+</ul>
+<h4 id="list-item-14">活禽</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="14" TitleNum="25" ShowNum="100" /}
+</ul>
+<h4 id="list-item-15">手工</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="15" TitleNum="25" ShowNum="100" /}
+</ul>
+<h4 id="list-item-17">饮料</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="17" TitleNum="25" ShowNum="100" /}
+</ul>
+<h4 id="list-item-18">干货</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="18" TitleNum="25" ShowNum="100" /}
+</ul>
+<h4 id="list-item-18">米面粮油</h4>
+<ul>
+{ZL.Label id="商城商品分类页列表_不分页" NodeID="22" TitleNum="25" ShowNum="100" /}
+  </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!--search end-->
+<!--main end-->
+
+<div class="h_bottom_nav  cl_bottom_nav">
+<ul class="container d-flex justify-content-around">
+<li class="bd-highlight"><a href="{ZL:GetNodeLinkUrl(2)/}"><i class="fa fa-home" aria-hidden="true"></i><span>首页</span></a></li>
+<li class="bd-highlight"><a href="{ZL:GetNodeLinkUrl(10)/}"><i class="fa fa-flickr" aria-hidden="true"></i><span>活动</span></a></li>
+<li class="bd-highlight"><a href="/cart/cartbyclass.aspx" class="active"><i class="fa z01-icon092" aria-hidden="true"></i><span>买菜</span></a></li>
+<li class="bd-highlight"><a href="{ZL:GetNodeLinkUrl(19)/}"><i class="fa fa-calendar-minus-o" aria-hidden="true"></i><span>菜谱</span></a></li>
+<li class="bd-highlight"><a href="/wxpromo.aspx?r=/User"><i class="fa fa-user" aria-hidden="true"></i><span>我</span></a></li>
+</ul>
+</div>
+<!--底部导航 end-->
+<section>
+<div class="mask_menu" style="display:none;"></div>
+<div class="menu" id="menufloat"><i class="fa fa-th-large icon-menu"></i></div>
+<div class="menu-c" id="menufloat-c" style="display:none;">
+<div class="menu-c-out">
+<div class="menu-c-inner"> <a class="a-home" href="{ZL:GetNodeLinkUrl(2)/}" title="首页"></a> <a class="a-tel" href="tel:{ZL.Label id="客服电话"/}" title="联系店主"></a> <a id="serviceUrl" class="a-server" href="{ZL.Label id="QQ客服群链接"/}" title="客服群"></a> 
+<a class="a-member" href="/wxpromo.aspx?r=/User" title="会员中心"></a> <a class="a-search" href="{ZL:GetNodeListUrl(2)/}" title="分类"></a> <a class="a-cart" href="/Cart/Cart.aspx?ProClass=1" title="购物车"></a> <a class="a-collect" href="{ZL:GetNodeLinkUrl(10)/}" id="collect-link" title="活动"></a> </div>
+<!--收藏可以改为留言，指向gesut--> 
+</div>
+</div>
+</section>
+<script src="/dist/js/foru.js"></script> 
+<script>
+    var swiper = new Swiper('#left_swer .swiper-container', {
+      direction: 'vertical',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+	el: '.swiper-pagination',
+	clickable: true,
+  },
+});
+
+
+$().ready(function(e) {
+    $(".s{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}").addClass("actives");
+
+});	
+//轮播js end
+
+</script>
+</body>
+</html>

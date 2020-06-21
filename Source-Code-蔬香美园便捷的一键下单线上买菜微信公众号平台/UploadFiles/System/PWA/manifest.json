@@ -1,0 +1,19 @@
+{
+    "short_name": "果蔬网",    
+    "name": "果蔬网",
+    "icons": [
+    {
+        "src": "/UploadFiles/System/PWA/x3zIKLLr_icon-96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+    },
+    {
+        "src": "/UploadFiles/System/PWA/x3zIKLLr_icon-144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+    }
+       ],
+    "display": "standalone",
+    "background_color":"#305AA2",
+    "start_url": "/default.aspx"
+}

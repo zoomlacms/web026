@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" style="height: 100%;">
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>{$SiteName/}_首页</title>
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot4()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+{ZL:GetCSS(2,0)/}
+</head>
+<body class="home_bg" style="height: 100%;overflow: hidden;">
+<main class="home_main container">
+<h1 class="logo"><a href="/"><img src="{$CssDir/}Images/logo_w.svg" alt="logo"></a></h1>
+<div class="errorinfo">
+<h2>蔬香美园,新鲜蔬菜你值得选择。</h2>
+<a class="goback" href="{ZL:GetNodeLinkUrl(2)/}">进入商城</a> </div>
+<div class="miscbox">
+<div class="tower"></div>
+<div class="towerlight"></div>
+<div class="beam"></div>
+</div>
+</main>
+<footer class="wave1"><div class="wave"></div></footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>325</LabelID>
+    <LabelName>微信首页商品热卖分类列表_不分页</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>商城</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|TitleNum,25,1,标题长|ShowNum,10,1,显示数</LabelParam>
+    <LabelTable>ZL_Commodities</LabelTable>
+    <LabelField>ZL_Commodities.LinPrice,ZL_Commodities.Nodeid,ZL_Commodities.Proname,ZL_Commodities.Thumbnails,ZL_Commodities.id,ZL_Commodities.Kayword</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) And Sales=1 And istrue=1 And Recycler=0 And ishot=1</LabelWhere>
+    <LabelOrder>ZL_Commodities.AddTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;&lt;a href="{ZL:GetShopUrl({Field="id"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="Thumbnails"/})/}" alt="{Field="Proname"/}"&gt;&lt;/a&gt;
+  &lt;p&gt;&lt;strong&gt; &lt;a href=""&gt;{ZL:CutText({Field="Proname"/},@TitleNum,)/}&lt;/a&gt;&lt;/strong&gt;&lt;small&gt;{Field="Kayword"/}&lt;/small&gt;&lt;span&gt;￥ {ZL:GetMoney({Field="LinPrice"/},2,1)/} &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>大于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_Commodities","tb_s":""}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>
